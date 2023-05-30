@@ -158,7 +158,7 @@ public class CreateUser {
 		sleep(2000);
 
 		
-		// Click on Penetration Testing Button
+		// Click on create Penetration Testing Button
 		WebElement newTestButton = driver.findElement(By.xpath("/html//div[@id='root']/div/div/div[2]/div/header/button[@type='button']"));
 		newTestButton.click();
 		
@@ -192,7 +192,121 @@ public class CreateUser {
 		WebElement penTestCreateButton = driver.findElement(By.xpath(
 				"//div[@role='presentation']/div[3]/div[@class='MuiCardActions-root MuiCardActions-spacing css-1ut4sty']/button[2]"));
 		penTestCreateButton.click();
+		
+		//Reconfiguring Penetration Test  
+		WebElement reconfigureButton = driver.findElement(By.xpath(
+				"/html//div[@id='root']/div//table[@class='MuiTable-root css-1owb465']/tbody/tr[35]/td[6]/button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-fuydw3']"));
+		reconfigureButton.click();
+		
+		
+		sleep(5000);
+		
+		//Select Scan Type to Base scan
+		WebElement baseScanRadioSelect = driver.findElement(By.xpath(
+				"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']/div/div[2]/div[2]/div[@role='radiogroup']//span[.='Base Scan']"));
+		baseScanRadioSelect.click();
+		
+		sleep(2000);
+		
+		//Click Select Trigger to Manual
+		WebElement clickSaveButton = driver.findElement(By.xpath(
+				"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']/div/div[6]/div[2]/div[@role='radiogroup']//span[.='Manual']"));
+		clickSaveButton.click();
+		sleep(2000);
 
+		//Select Save Button
+		WebElement selectSave = driver.findElement(By.xpath(
+				"//div[@role='presentation']/div[3]/div[@class='MuiCardActions-root MuiCardActions-spacing css-1ut4sty']/button[2]"));
+		selectSave.click();
+		sleep(2000);
+		
+		//Select Run to start the Penetration Test
+				WebElement  runTest2= driver.findElement(By.xpath(
+						"/html//div[@id='root']/div//table[@class='MuiTable-root css-1owb465']/tbody/tr[35]/td[6]/button[1]"));
+				runTest2.click();
+				sleep(5000);
+				
+				
+				
+//		//Trial 2 to reconfigure Penetration test to Auto Scan	
+//				//Reconfiguring Penetration Test  
+//				WebElement reconfigureButtonTrial2 = driver.findElement(By.xpath(
+//						"/html//div[@id='root']/div//table[@class='MuiTable-root css-1owb465']/tbody/tr[37]/td[6]/button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-fuydw3']"));
+//				reconfigureButtonTrial2.click();
+//				
+//				
+//				sleep(5000);
+//				
+//				//Select Scan Type to Base scan
+//				WebElement baseScanRadioSelectTrial2 = driver.findElement(By.xpath(
+//						"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']/div/div[2]/div[2]/div[@role='radiogroup']//span[.='Base Scan']"));
+//				baseScanRadioSelectTrial2.click();
+//				
+//				sleep(2000);
+//				
+//				//Click Select Trigger to Auto
+//				WebElement selectTriggerToAuto = driver.findElement(By.xpath(
+//						"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']/div/div[6]/div[2]/div[@role='radiogroup']//span[.='Auto']"));
+//				selectTriggerToAuto.click();
+//				sleep(2000);
+//				
+//				//scroll down
+//				JavascriptExecutor je=(JavascriptExecutor)driver;
+//				WebElement element= driver.findElement (By.xpath("//div[@role='presentation']/div[3]/div[@class='MuiCardActions-root MuiCardActions-spacing css-1ut4sty']/button[2]"));
+//				je.executeScript("arguments[0].scrollIntoView(true)", element);
+//				
+//				//Select Custom Recurrence ,Repeat Dropdown
+//				WebElement selectRecurrenceRepeatDropdown = driver.findElement(By.xpath(
+//						"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']/div//div[@role='button']"));
+//				selectRecurrenceRepeatDropdown.click();
+//				sleep(2000);
+//				
+//				//Select Custom Recurrence ,Repeat To Weekly
+//				WebElement selectRecurrenceRepeatDropdownToWeekly = driver.findElement(By.xpath(
+//						"//div[@id='menu-']//ul[@role='listbox']/li[2]"));
+//				selectRecurrenceRepeatDropdownToWeekly.click();
+//				sleep(2000);
+//				
+//				//Select Custom Recurrence ,Repeat To Repeat on Monday Tuesday and Wednesday
+//				WebElement selectMondayToRunTest = driver.findElement(By.xpath(
+//						"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']//div[.='M']"));
+//				selectMondayToRunTest.click();
+//				
+//				WebElement selectTuesdayToRunTest = driver.findElement(By.xpath(
+//						"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']/div/div[6]/div[3]/div/div/div[4]/div[3]"));
+//				selectTuesdayToRunTest .click();
+//				
+//				WebElement selectWednesdayToRunTest = driver.findElement(By.xpath(
+//						"/html/body/div[@role='presentation']/div[3]/div[@class='MuiCardContent-root css-1rojl3g']//div[.='W']"));
+//				selectWednesdayToRunTest .click();
+				
+//				//Select Time to Schedule Penetration Test
+//				WebElement enterTime = driver.findElement(By.xpath("/html//label[@id=':r2s:-label']"));
+//				enterTime.sendKeys("09:31 PM");
+
+				
+				
+				
+				sleep(2000);
+				
+				
+				
+				
+				
+				//Select Save Button    
+				WebElement selectSaveButton = driver.findElement(By.xpath(
+						"//div[@role='presentation']/div[3]/div[@class='MuiCardActions-root MuiCardActions-spacing css-1ut4sty']/button[2]"));
+				selectSaveButton.click();
+				sleep(2000);
+				
+				//Select Run to start the Penetration Test
+						WebElement  runTest= driver.findElement(By.xpath(
+								"/html//div[@id='root']/div//table[@class='MuiTable-root css-1owb465']/tbody/tr[35]/td[6]/button[1]"));
+						runTest.click();
+						sleep(5000);
+				
+		
+		
 		// --------------------------------------------------------Antivirus
 		// page--------------------------------------------------------------------------------------------------
 

@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.DevSecOps">
+      <class name="com.herokuapp.theinternet.BuildEnvironmentSetup">
         <methods>
-          <include name="setUp"/>
-          <include name="createUser"/>
+          <include name="ValidClusterNameForProd"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.DevSecOps -->
+      </class> <!-- com.herokuapp.theinternet.BuildEnvironmentSetup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

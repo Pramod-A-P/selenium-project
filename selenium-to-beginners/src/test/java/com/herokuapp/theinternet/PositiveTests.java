@@ -11,7 +11,8 @@ import org.testng.annotations.Test;
 
 public class PositiveTests {
 	@Parameters({ "first-name" })
-	@Test
+	
+	@Test(dataProvider= "dp1", dataProviderClass= DataSupplier.class)
 	public void loginTest() {
 
 		System.out.println("Starting LoginTest");
@@ -23,7 +24,7 @@ public class PositiveTests {
 		sleep(3000);
 
 		// maximize browser window
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();  
 
 		// Open Test Page
 		String url = "https://dashboard-stg.optiq.ai/login";
